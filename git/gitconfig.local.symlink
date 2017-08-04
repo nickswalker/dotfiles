@@ -1,0 +1,12 @@
+[commit]
+	gpgsign = true
+[push]
+	default = simple
+[gpg]
+	program = gpg
+[user]
+	signingkey = 8B9AC63C
+	name = Nick Walker
+	email = nick@nickwalker.us
+[core]
+	autocrlf = input

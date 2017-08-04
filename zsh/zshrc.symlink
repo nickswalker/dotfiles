@@ -1,8 +1,16 @@
+# Stash your environment variables in ~/.zshrc.local. This means they'll stay out
+# of your main dotfiles repository (which may be public, like this one), but
+# you'll have access to them in your scripts.
+if [[ -a ~/.zshrc.local ]]
+then
+  source ~/.zshrc.local
+fi
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/nick/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -16,20 +24,15 @@ ENABLE_CORRECTION="true"
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git ros)
+plugins=(git ros z)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-source "${HOME}/bin/villa_tools/shell_configuration.sh"
-export PATH=$HOME/bin/clion/bin:$HOME/bin/pycharm/bin:$PATH
-export VILLA_REMOTE_WORKSPACE=groceries
-sws
+if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+else
+   export EDITOR='mvim'
+fi
