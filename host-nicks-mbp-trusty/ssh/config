@@ -1,0 +1,17 @@
+Host *
+    IdentityFile ~/.ssh/id_rsa
+    ControlMaster auto
+    ControlPath ~/.ssh/sockets/%r@%h-%p
+    ControlPersist 600
+
+Host github.com
+    HostName github.com
+    User nickswalker
+
+Host server
+    HostName ssh.nickwalker.us
+    User nick
+
+Host cs
+    HostName linux.cs.utexas.edu
+    User nwalker
