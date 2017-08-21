@@ -1,8 +1,8 @@
 # Nick Walker's dotfiles
 
-* Basic set of aliases
-* JetBrains IDE configurations
+* Aliases
+* tmux and editor configuratios 
 
 ## Installation
 
-Run `scripts/bootstrap`. Anything with a `.symlink` suffix will be symlinked to your home directory.
+Clone with `--recursive`  into `~/dotfiles`. Install `rcm`, then `rcup`.

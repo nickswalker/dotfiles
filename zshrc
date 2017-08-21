@@ -1,11 +1,16 @@
+safe_source () {
+    if [[ -a $1 ]]; then
+        source $1
+    fi
+}
+
 # Stash your environment variables in ~/.zshrc.local. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
-if [[ -a ~/.zshrc.local ]]
-then
-  source ~/.zshrc.local
-fi
 
+safe_source ~/.zshrc.local
+
+export ZSH_CUSTOM=~/.zsh-custom
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -17,14 +22,14 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
 
-
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git ros z)
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
+safe_source ~/.util/zsh/host.zsh
 
 source $ZSH/oh-my-zsh.sh
 
