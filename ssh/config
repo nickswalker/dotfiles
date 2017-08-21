@@ -9,7 +9,7 @@ Host *
 
 Host github.com
     HostName github.com
-    User nickswalker
+    User git
 
 Host server
     HostName ssh.nickwalker.us
