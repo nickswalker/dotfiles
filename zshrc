@@ -41,3 +41,9 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
    export EDITOR='mvim'
 fi
+
+if [[ -d "$HOME/miniconda3" ]]; then
+    export PATH=$HOME/miniconda3/bin:$PATH
+fi
+
+eval "$(direnv hook zsh)"
