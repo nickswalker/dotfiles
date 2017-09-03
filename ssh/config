@@ -1,7 +1,4 @@
 Host *
-    # OSX keychain as SSH agent
-    UseKeychain yes
-    AddKeysToAgent yes
     IdentityFile ~/.ssh/id_rsa
     ControlMaster auto
     ControlPath ~/.ssh/sockets/%r@%h-%p
@@ -15,6 +12,36 @@ Host server
     HostName ssh.nickwalker.us
     User nick
 
+# School
+
 Host cs
     HostName linux.cs.utexas.edu
     User nwalker
+
+Host condor
+    HostName submit64.cs.utexas.edu
+    User nwalker
+
+Host lab
+    HostName nibbler.csres.utexas.edu
+    Port 40
+    User nwalker
+
+Host lab2
+    HostName kif.csres.utexas.edu
+    Port 40
+    User nwalker
+
+# Client
+
+Host new
+ HostName 50.87.248.168
+ User therigt4
+ ControlPath ~/.ssh/controlmasters/%r@%h:%p
+ ControlMaster auto
+ ControlPersist 10m
+
+Host old
+ HostName killjoy.responsiveny.com
+ User therighteye
+

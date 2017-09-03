@@ -47,3 +47,5 @@ if [[ -d "$HOME/miniconda3" ]]; then
 fi
 
 eval "$(direnv hook zsh)"
+eval `dircolors ~/.dir_colors`
+
