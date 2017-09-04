@@ -47,5 +47,13 @@ if [[ -d "$HOME/miniconda3" ]]; then
 fi
 
 eval "$(direnv hook zsh)"
-eval `dircolors ~/.dir_colors`
 
+if ! type "dircolors" > /dev/null; then
+  export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+else
+    eval `dircolors ~/.dir_colors`
+fi
+
+if type "hub" > /dev/null; then
+    eval "$(hub alias -s)"
+fi
