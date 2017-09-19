@@ -1,3 +1,10 @@
+[user]
+    name=Nick Walker
+    email=nick@nickwalker.us
+    signingkey=8B9AC63C
+    gpgsign=true
+[gpg]
+   program=gpg1
 # A good list of alises http://haacked.com/archive/2014/07/28/github-flow-aliases/
 [alias]
         # Staging

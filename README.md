@@ -6,18 +6,26 @@
 
 ## Installation
 
-Clone with `--recursive`  into `~/dotfiles`. Install [rcm](https://github.com/thoughtbot/rcm), then `rcup`.
+Clone with `--recursive`  into `~/dotfiles`. Install [rcm](https://github.com/thoughtbot/rcm).
 
 ### macOS
 
-[Install Homebrew](https://brew.sh).
+[Install Homebrew](https://brew.sh). Install [GPG Tools](https://gpgtools.org).
 
-    brew install direnv rcm tmux wget youtube-dl hub tree
+    brew install direnv rcm tmux wget youtube-dl hub tree asciinema ripgrep gpg2 gpg1
     brew cask install iterm2
+
+Create an `~/.rcrc` file with `HOSTNAME` configured, then `mkrc` it.
+
+Finally `rcup`.
 
 ### Ubuntu
 
+Follow the instructions to get [asciienma](https://asciinema.org/docs/installation)
+    
     sudo apt-get install tree
+
+Then `rcup`
 
 ## Per-host Configuration
 
