@@ -4,7 +4,7 @@
     signingkey=8B9AC63C
     gpgsign=true
 [gpg]
-   program=gpg1
+   program=gpg
 # A good list of alises http://haacked.com/archive/2014/07/28/github-flow-aliases/
 [alias]
         # Staging

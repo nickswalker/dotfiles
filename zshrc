@@ -57,3 +57,10 @@ fi
 if type "hub" > /dev/null; then
     eval "$(hub alias -s)"
 fi
+
+if type "rbenv" > /dev/null; then
+    eval "$(rbenv init -)"
+fi
+
+alias ownfolders="sudo chmod 100755 **/*(/)"
+alias ownfiles="sudo chmod 100644 **/*(.)"
