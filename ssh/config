@@ -32,16 +32,10 @@ Host lab2
     Port 40
     User nwalker
 
-# Client
+Host calculon
+    HostName 10.147.46.192
+    User nwalker
 
-Host new
- HostName 50.87.248.168
- User therigt4
- ControlPath ~/.ssh/controlmasters/%r@%h:%p
- ControlMaster auto
- ControlPersist 10m
-
-Host old
- HostName killjoy.responsiveny.com
- User therighteye
-
+Host drperceptron
+    HostName drperceptron.csres.utexas.edu
+    User bwilab
