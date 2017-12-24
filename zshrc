@@ -64,3 +64,5 @@ fi
 
 alias ownfolders="sudo chmod 100755 **/*(/)"
 alias ownfiles="sudo chmod 100644 **/*(.)"
+
+alias getbwihosts="curl http://nixons-head.csres.utexas.edu:7979/hosts"
