@@ -33,9 +33,16 @@ Host lab2
     User nwalker
 
 Host calculon
-    HostName 10.147.46.192
+    HostName 10.147.83.74
     User nwalker
+    ForwardX11 yes
+    ForwardAgent yes
 
 Host drperceptron
     HostName drperceptron.csres.utexas.edu
     User bwilab
+
+Host nixons-head
+    HostName nixons-head.csres.utexas.edu
+    Port 40
+    User nwalker
