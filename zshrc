@@ -43,7 +43,7 @@ else
 fi
 
 if [[ -d "$HOME/miniconda3" ]]; then
-    export PATH=$HOME/miniconda3/bin:$PATH
+#    export PATH=$HOME/miniconda3/bin:$PATH
 fi
 
 eval "$(direnv hook zsh)"
@@ -57,3 +57,6 @@ fi
 if type "hub" > /dev/null; then
     eval "$(hub alias -s)"
 fi
+
+alias displaystandard="xrandr --output eDP1 --mode 1680x1050"
+alias displaylarge="xrandr --output eDP1 --mode 1920x1200"
