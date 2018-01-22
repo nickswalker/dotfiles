@@ -32,16 +32,17 @@ Host lab2
     Port 40
     User nwalker
 
-# Client
+Host calculon
+    HostName 10.147.83.74
+    User nwalker
+    ForwardX11 yes
+    ForwardAgent yes
 
-Host new
- HostName 50.87.248.168
- User therigt4
- ControlPath ~/.ssh/controlmasters/%r@%h:%p
- ControlMaster auto
- ControlPersist 10m
+Host drperceptron
+    HostName drperceptron.csres.utexas.edu
+    User bwilab
 
-Host old
- HostName killjoy.responsiveny.com
- User therighteye
-
+Host nixons-head
+    HostName nixons-head.csres.utexas.edu
+    Port 40
+    User nwalker

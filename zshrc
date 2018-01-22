@@ -58,5 +58,16 @@ if type "hub" > /dev/null; then
     eval "$(hub alias -s)"
 fi
 
+
 alias displaystandard="xrandr --output eDP1 --mode 1680x1050"
 alias displaylarge="xrandr --output eDP1 --mode 1920x1200"
+
+if type "rbenv" > /dev/null; then
+    eval "$(rbenv init -)"
+fi
+
+alias ownfolders="sudo chmod 100755 **/*(/)"
+alias ownfiles="sudo chmod 100644 **/*(.)"
+
+alias getbwihosts="curl http://nixons-head.csres.utexas.edu:7979/hosts"
+
