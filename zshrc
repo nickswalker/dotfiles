@@ -54,10 +54,6 @@ else
     eval `dircolors ~/.dir_colors`
 fi
 
-if type "hub" > /dev/null; then
-    eval "$(hub alias -s)"
-fi
-
 if type "rbenv" > /dev/null; then
     eval "$(rbenv init -)"
 fi

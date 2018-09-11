@@ -12,8 +12,9 @@ Clone with `--recursive`  into `~/dotfiles`. Install [rcm](https://github.com/th
 
 [Install Homebrew](https://brew.sh).
 
+    brew tap thoughtbot/formulae
     brew install direnv rcm tmux wget youtube-dl hub tree asciinema ripgrep gnupg pinentry-mac rbenv npm
-    brew cask install betterzip iterm2 qlmarkdown tunnelblick qlstephen qlimagesize qlcolorcode 
+    brew cask install anki betterzip iterm2 qlmarkdown tunnelblick qlstephen qlimagesize qlcolorcode
 
 Create an `~/.rcrc` file with `HOSTNAME` configured, then `mkrc` it.
 
