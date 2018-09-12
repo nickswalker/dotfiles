@@ -43,7 +43,7 @@ else
 fi
 
 if [[ -d "$HOME/miniconda3" ]]; then
-    export PATH=$HOME/miniconda3/bin:$PATH
+#    export PATH=$HOME/miniconda3/bin:$PATH
 fi
 
 eval "$(direnv hook zsh)"
@@ -54,6 +54,10 @@ else
     eval `dircolors ~/.dir_colors`
 fi
 
+# Aliases for changing resolution on MacBook
+alias displaystandard="xrandr --output eDP1 --mode 1680x1050"
+alias displaylarge="xrandr --output eDP1 --mode 1920x1200"
+
 if type "rbenv" > /dev/null; then
     eval "$(rbenv init -)"
 fi
@@ -62,3 +66,4 @@ alias ownfolders="sudo chmod 100755 **/*(/)"
 alias ownfiles="sudo chmod 100644 **/*(.)"
 
 alias getbwihosts="curl http://nixons-head.csres.utexas.edu:7979/hosts"
+

@@ -6,23 +6,35 @@
 
 ## Installation
 
-Clone with `--recursive`  into `~/dotfiles`. Install [rcm](https://github.com/thoughtbot/rcm).
+Clone with `--recursive`  into `~/.dotfiles`. Install [rcm](https://github.com/thoughtbot/rcm).
+
+    git clone --recursive <...> ~/.dotfiles
 
 ### macOS
 
 [Install Homebrew](https://brew.sh).
 
-    brew tap thoughtbot/formulae
-    brew install direnv rcm tmux wget youtube-dl hub tree asciinema ripgrep gnupg pinentry-mac rbenv npm
-    brew cask install anki betterzip iterm2 qlmarkdown tunnelblick qlstephen qlimagesize qlcolorcode
+[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh).
 
-Create an `~/.rcrc` file with `HOSTNAME` configured, then `mkrc` it.
+Then
+
+    brew tap thoughtbot/formulae
+    brew install asciinema direnv gnupg hub rcm tmux tree rbenv ripgrep pinentry-mac npm wget youtube-dl
+    brew cask install anki betterzip iterm2 qlimagesize qlcolorcode qlmarkdown qlstephen tunnelblick
+
+Create an `~/.rcrc` file with `HOSTNAME` configured
+
+    echo HOSTNAME=<hostname> > ~/.rcrc
+
+Then `mkrc` it.
 
 Finally 
 
     rcup -x README.md -x LICENSE -x uw
 
 ### Ubuntu
+
+[Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh).
 
 Follow the instructions to get [asciienma](https://asciinema.org/docs/installation)
     
@@ -31,6 +43,7 @@ Follow the instructions to get [asciienma](https://asciinema.org/docs/installati
 Then
 
     rcup -x README.md -x LICENSE -x uw
+
 
 ## Per-host Configuration
 
