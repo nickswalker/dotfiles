@@ -18,7 +18,9 @@ Clone with `--recursive`  into `~/dotfiles`. Install [rcm](https://github.com/th
 
 Create an `~/.rcrc` file with `HOSTNAME` configured, then `mkrc` it.
 
-Finally `rcup`.
+Finally 
+
+    rcup -x README.md -x LICENSE -x uw
 
 ### Ubuntu
 
@@ -26,10 +28,21 @@ Follow the instructions to get [asciienma](https://asciinema.org/docs/installati
     
     sudo apt-get install tree
 
-Then `rcup`
+Then
+
+    rcup -x README.md -x LICENSE -x uw
 
 ## Per-host Configuration
 
 Make changes to the dotfile, then use
 
     mkrc -o .file
+
+## Additional Machine Configuration
+
+### macOS
+
+* Sign into accounts in System Preferences
+* Airdrop keys, VPN config from previous machine.
+* Restore 1Password, Pixelmator, other apps from App Store purchases
+* Install RescueTime

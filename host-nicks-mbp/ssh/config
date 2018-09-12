@@ -15,6 +15,6 @@ Host server
     HostName ssh.nickwalker.us
     User nick
 
-Host cs
+Host ut
     HostName linux.cs.utexas.edu
     User nwalker
