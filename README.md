@@ -20,7 +20,7 @@ Then
 
     brew tap thoughtbot/formulae
     brew install asciinema direnv gnupg hub rcm tmux tree rbenv ripgrep pinentry-mac npm wget youtube-dl
-    brew cask install anki betterzip iterm2 qlimagesize qlcolorcode qlmarkdown qlstephen tunnelblick
+    brew cask install anki betterzip caffeine imageoptim iterm2 jetbrains-toolbox qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack tunnelblick
 
 Create an `~/.rcrc` file with `HOSTNAME` configured
 
@@ -53,9 +53,11 @@ Make changes to the dotfile, then use
 
 ## Additional Machine Configuration
 
+* Install development fonts (Operator, Input)
+
 ### macOS
 
 * Sign into accounts in System Preferences
 * Airdrop keys, VPN config from previous machine.
-* Restore 1Password, Pixelmator, other apps from App Store purchases
-* Install RescueTime
+* Restore Cinch, 1Password, Pixelmator, other apps from App Store purchases
+* Point iTerm to dotfile preferences
