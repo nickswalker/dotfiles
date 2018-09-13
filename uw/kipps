@@ -1,0 +1,9 @@
+#!/bin/bash
+PATH=/bin:/usr/bin
+
+case "$#" in
+    0) echo 'network kipps "Unknown" "Internet Printing Protocol (kipps)"'; exit 0;;
+esac
+
+DEVICE_URI=ipps:${DEVICE_URI/kipps:/}
+exec env -u AUTH_PASSWORD DEVICE_URI=${DEVICE_URI} /usr/libexec/cups/backend/ipps "$@"

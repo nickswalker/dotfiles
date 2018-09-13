@@ -1,0 +1,195 @@
+*PPD-Adobe: "4.3"
+*%
+*% This PPD file is for using a PDF printer in its native PDF mode, with
+*% option settings controlled via PJL commands. It uses CUPS with the
+*% OpenPrinting CUPS Filters package.
+*%
+*% This PPD is experimental. It is possible that some of the options
+*% and settings do not make sense or do not cause any change on the output.
+*% It can even happen that with certain settings nothing or an error page
+*% comes out.
+*%
+*% This file is published under the GNU General Public License
+*%
+*% You may save this file as 'Generic-PDF_Printer-PDF.ppd'
+*%
+*%
+*FormatVersion:	"4.3"
+*FileVersion:	"1.1"
+*LanguageVersion: English 
+*LanguageEncoding: ISOLatin1
+*PCFileName:	"cse-ps.ppd"
+*Manufacturer:	"CSE"
+*Product:       "(CSE B&W Printer)"
+*cupsVersion:	1.0
+*cupsManualCopies: True
+*cupsModelNumber:  2
+*ModelName:     "CSE B&W Printer"
+*ShortNickName: "CSE B&W Printer"
+*NickName:      "CSE B&W Printer"
+*PSVersion:     "(3010.107) 0"
+*LanguageLevel:	"3"
+*ColorDevice:	False
+*DefaultColorSpace: Gray
+*FileSystem:	False
+*Throughput:	"30"
+*LandscapeOrientation: Plus90
+*TTRasterizer:	Type42
+*1284DeviceID: "MFG:Generic;CMD:PJL,PDF;MDL:PDF Printer;CLS:PRINTER;DES:Generic PDF Printer;DRV:DPDF,R1,M0;"
+*JCLBegin:            ""
+*JCLToPDFInterpreter: ""
+*JCLEnd:              ""
+
+*cupsFilter: "application/vnd.cups-pdf 0 -"
+*cupsFilter2: "application/pdf application/vnd.cups-pdf 0 cgpdftopdf"
+
+*OpenGroup: General/General
+*JCLOpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 100 JCLSetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter/Letter: ""
+*PageSize A4/A4: ""
+*PageSize A5/A5: ""
+*PageSize A6/A6: ""
+*PageSize ISOB5/ISO B5: ""
+*PageSize EnvC5/C5: ""
+*PageSize Env10/Com 10: ""
+*PageSize EnvDL/DL: ""
+*PageSize 5x13/Eight Point 5x13: ""
+*PageSize EnvC6/Envelope C6: ""
+*PageSize Executive/Executive: ""
+*PageSize 183x256mm/JIS B5: ""
+*PageSize 128x183mm/JIS B6: ""
+*PageSize Legal/Legal: ""
+*PageSize EnvMonarch/Monarch: ""
+*PageSize 68.79x95.25mm/16K: ""
+*PageSize Statement/Statement: ""
+*JCLCloseUI: *PageSize
+
+*JCLOpenUI *PageRegion: PickOne
+*OrderDependency: 100 JCLSetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter/Letter: ""
+*PageRegion A4/A4: ""
+*PageRegion A5/A5: ""
+*PageRegion A6/A6: ""
+*PageRegion ISOB5/ISO B5: ""
+*PageRegion EnvC5/C5: ""
+*PageRegion Env10/Com 10: ""
+*PageRegion EnvDL/DL: ""
+*PageRegion 5x13/Eight Point 5x13: ""
+*PageRegion EnvC6/Envelope C6: ""
+*PageRegion Executive/Executive: ""
+*PageRegion 183x256mm/JIS B5: ""
+*PageRegion 128x183mm/JIS B6: ""
+*PageRegion Legal/Legal: ""
+*PageRegion EnvMonarch/Monarch: ""
+*PageRegion 68.79x95.25mm/16K: ""
+*PageRegion Statement/Statement: ""
+*JCLCloseUI: *PageRegion
+
+*DefaultImageableArea: Letter
+*ImageableArea Letter/Letter: "18 36 594 756"
+*ImageableArea A4/A4: "18 36 577 806"
+*ImageableArea A5/A5: "18 36 402 559"
+*ImageableArea A6/A6: "18 36 279 384"
+*ImageableArea ISOB5/ISO B5: "18 36 480 672"
+*ImageableArea EnvC5/C5: "18 36 441 613"
+*ImageableArea Env10/Com 10: "18 36 279 648"
+*ImageableArea EnvDL/DL: "18 36 293 587"
+*ImageableArea 5x13/Eight Point 5x13: "18 36 342 900"
+*ImageableArea EnvC6/Envelope C6: "18 36 305 423"
+*ImageableArea Executive/Executive: "18 36 504 720"
+*ImageableArea 183x256mm/JIS B5: "18 36 500 691"
+*ImageableArea 128x183mm/JIS B6: "18 36 344 482"
+*ImageableArea Legal/Legal: "18 36 594 972"
+*ImageableArea EnvMonarch/Monarch: "18 36 261 504"
+*ImageableArea 68.79x95.25mm/16K: "18 36 177 234"
+*ImageableArea Statement/Statement: "18 36 378 576"
+
+*DefaultPaperDimension: Letter
+*PaperDimension Letter/Letter: "612 792"
+*PaperDimension A4/A4: "595 842"
+*PaperDimension A5/A5: "420 595"
+*PaperDimension A6/A6: "297 420"
+*PaperDimension ISOB5/ISO B5: "498 708"
+*PaperDimension EnvC5/C5: "459 649"
+*PaperDimension Env10/Com 10: "297 684"
+*PaperDimension EnvDL/DL: "311 623"
+*PaperDimension 5x13/Eight Point 5x13: "360 936"
+*PaperDimension EnvC6/Envelope C6: "323 459"
+*PaperDimension Executive/Executive: "522 756"
+*PaperDimension 183x256mm/JIS B5: "518 727"
+*PaperDimension 128x183mm/JIS B6: "362 518"
+*PaperDimension Legal/Legal: "612 1008"
+*PaperDimension EnvMonarch/Monarch: "279 540"
+*PaperDimension 68.79x95.25mm/16K: "195 270"
+*PaperDimension Statement/Statement: "396 612"
+
+*CloseGroup: General
+
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+
+*JCLOpenUI *Duplex/Double-Sided Printing: PickOne
+*OrderDependency: 100 JCLSetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: ""
+*Duplex DuplexNoTumble/Long-Edge binding: ""
+*Duplex DuplexTumble/Short-Edge binding: ""
+*JCLCloseUI: *Duplex
+
+*% CUPS Job Ticket support and options...
+*Protocols: PJL
+*JCLBegin: "%!PDF-1.2<0A>"
+*JCLToPSInterpreter: ""
+*JCLEnd: ""
+
+*OpenGroup: CUPS/CUPS Options
+
+*JCLOpenUI *cupsJobSheetsStart/Start Banner: PickOne
+*OrderDependency: 20 JCLSetup *cupsJobSheetsStart
+*DefaultcupsJobSheetsStart: a
+*cupsJobSheetsStart a/"https<3A><2F><2F>lpprefs<2F>lpprefs": ""
+*End
+*cupsJobSheetsStart b/"to turn off banner": ""
+*End
+*JCLCloseUI: *cupsJobSheetsStart
+
+*CloseGroup: CUPS
