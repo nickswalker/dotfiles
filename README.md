@@ -20,7 +20,7 @@ Then
 
     brew tap thoughtbot/formulae
     brew install asciinema direnv gnupg hub rcm tmux tree rbenv ripgrep pinentry-mac npm wget youtube-dl
-    brew cask install anki betterzip caffeine imageoptim iterm2 jetbrains-toolbox qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack tunnelblick
+    brew cask install anki betterzip caffeine imageoptim iterm2 jetbrains-toolbox mendeley qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack spotify tunnelblick
 
 Create an `~/.rcrc` file with `HOSTNAME` configured
 
