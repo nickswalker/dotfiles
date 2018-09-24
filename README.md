@@ -20,7 +20,7 @@ Then
 
     brew tap thoughtbot/formulae
     brew install asciinema direnv gnupg hub rcm tmux tree rbenv ripgrep pinentry-mac npm wget youtube-dl
-    brew cask install anki betterzip caffeine imageoptim iterm2 jetbrains-toolbox mendeley qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack spotify tunnelblick
+    brew cask install adobe-creative-cloud anki betterzip caffeine dropbox imageoptim iterm2 jetbrains-toolbox mendeley qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack spotify tunnelblick
 
 Create an `~/.rcrc` file with `HOSTNAME` configured
 
@@ -54,6 +54,7 @@ Make changes to the dotfile, then use
 ## Additional Machine Configuration
 
 * Install development fonts (Operator, Input)
+* Setup eduroam
 
 ### macOS
 
