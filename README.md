@@ -16,12 +16,6 @@ Clone with `--recursive`  into `~/.dotfiles`. Install [rcm](https://github.com/t
 
 [Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh).
 
-Then
-
-    brew tap thoughtbot/formulae
-    brew install asciinema direnv gnupg hub rcm tmux tree rbenv ripgrep pinentry-mac npm wget youtube-dl
-    brew cask install adobe-creative-cloud anki betterzip caffeine dropbox imageoptim iterm2 jetbrains-toolbox mendeley qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack spotify tunnelblick
-
 Create an `~/.rcrc` file with `HOSTNAME` configured
 
     echo HOSTNAME=<hostname> > ~/.rcrc
@@ -62,3 +56,12 @@ Make changes to the dotfile, then use
 * Airdrop keys, VPN config from previous machine.
 * Restore Cinch, 1Password, Pixelmator, other apps from App Store purchases
 * Point iTerm to dotfile preferences
+
+### Ubuntu
+
+* Migrate keys
+* Install ROS
+* Install Chrome
+* Install [Solarized dark terminal theme](https://github.com/Anthony25/gnome-terminal-colors-solarized)
+* Install slack
+* Install caffeine
