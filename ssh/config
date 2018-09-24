@@ -14,6 +14,9 @@ Host server
 
 # School
 
+Host *.csres.utexas.edu
+    User nwalker
+
 Host cs
     HostName linux.cs.utexas.edu
     User nwalker
@@ -32,12 +35,6 @@ Host lab2
     Port 40
     User nwalker
 
-Host calculon
-    HostName 10.147.83.74
-    User nwalker
-    ForwardX11 yes
-    ForwardAgent yes
-
 Host drperceptron
     HostName drperceptron.csres.utexas.edu
     User bwilab
@@ -45,4 +42,23 @@ Host drperceptron
 Host nixons-head
     HostName nixons-head.csres.utexas.edu
     Port 40
-    User nwalker
+
+# CSE
+
+Host *.cs.washington.edu
+     User nswalker
+
+Host recycle
+    HostName recycle.cs.washington.edu
+
+Host bicycle
+    HostName bicycle.cs.washington.edu
+
+Host tricycle
+    HostName tricycle.cs.washington.edu
+
+Host boom
+    HostName boom.cs.washington.edu
+
+Host bam
+    HostName bam.cs.washington.edu

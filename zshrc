@@ -67,3 +67,4 @@ alias ownfiles="sudo chmod 100644 **/*(.)"
 
 alias getbwihosts="curl http://nixons-head.csres.utexas.edu:7979/hosts"
 
+source ~/.dotfiles/scripts/tmux_helpers.sh
