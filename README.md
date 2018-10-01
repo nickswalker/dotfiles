@@ -24,7 +24,7 @@ Then `mkrc` it.
 
 Finally 
 
-    rcup -x README.md -x LICENSE -x uw
+    rcup -x README.md -x LICENSE -x uw -x scripts
 
 ### Ubuntu
 

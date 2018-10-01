@@ -2,6 +2,7 @@
     name=Nick Walker
     email=nick@nickwalker.us
     signingkey=8B9AC63C
+# We'll use gpg v1 because it seems to work well on both macOS and Ubuntu
 [gpg]
    program=gpg
 [commit]
