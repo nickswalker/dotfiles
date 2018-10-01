@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo apt update
-sudo apt install -y curl dconf-cli git ssh tree tmux ubuntu-gnome-desktop zsh
+sudo apt install -y curl dconf-cli ecryptfs-utils git lvm2 ssh tree tmux ubuntu-gnome-desktop zsh
 
 sudo snap install slack --classic
 

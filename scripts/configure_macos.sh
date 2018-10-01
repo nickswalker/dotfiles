@@ -6,7 +6,8 @@ brew tap thoughtbot/formulae
 brew install asciinema direnv gnupg hub rcm tmux tree rbenv ripgrep pinentry-mac npm wget youtube-dl
 brew cask install adobe-creative-cloud anki betterzip caffeine dropbox imageoptim iterm2 jetbrains-toolbox mendeley qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack spotify tunnelblick
 
-
+# Get command line tools
+xcode-select --install
 
 # This guide is helpful:
 # https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/
