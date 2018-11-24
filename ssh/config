@@ -12,7 +12,7 @@ Host server
     HostName ssh.nickwalker.us
     User nick
 
-# School
+# UT
 
 Host *.csres.utexas.edu
     User nwalker
@@ -45,7 +45,7 @@ Host nixons-head
 
 # CSE
 
-Host *.cs.washington.edu
+Host bam bicycle boom recycle roomba tricycle
      User nswalker
 
 Host recycle
@@ -62,3 +62,23 @@ Host boom
 
 Host bam
     HostName bam.cs.washington.edu
+
+# HCRL
+
+Host astro panang roomba snoopy
+#    ProxyJump boom
+
+Host astro
+    HostName astro.cs.washington.edu
+    User fetch
+
+Host panang
+    HostName panang.personalrobotics.cs.washington.edu
+    User mayfield
+
+Host roomba
+    HostName roomba.cs.washington.edu
+
+Host snoopy
+    HostName snoopy.personalrobotics.cs.washington.edu
+    User mayfield

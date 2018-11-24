@@ -6,9 +6,11 @@
 
 ## Installation
 
-Clone with `--recursive`  into `~/.dotfiles`. Install [rcm](https://github.com/thoughtbot/rcm).
+Clone with `--recursive`  into `~/.dotfiles`.
 
     git clone --recursive <...> ~/.dotfiles
+
+Install [rcm](https://github.com/thoughtbot/rcm).
 
 ### macOS
 
@@ -31,8 +33,6 @@ Finally
 [Install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh).
 
 Follow the instructions to get [asciienma](https://asciinema.org/docs/installation)
-    
-    sudo apt-get install tree
 
 Then
 
@@ -62,6 +62,6 @@ Make changes to the dotfile, then use
 * Migrate keys
 * Install ROS
 * Install Chrome
+* Install [Mendeley](https://www.mendeley.com/guides/download-mendeley-desktop/ubuntu/instructions)
 * Install [Solarized dark terminal theme](https://github.com/Anthony25/gnome-terminal-colors-solarized)
-* Install slack
 * Install caffeine
