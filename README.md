@@ -27,6 +27,7 @@ Then `mkrc` it.
 Finally 
 
     rcup -x README.md -x LICENSE -x uw -x scripts
+    # Use -B to provide a hostname if needed
 
 ### Ubuntu
 
@@ -36,7 +37,7 @@ Follow the instructions to get [asciienma](https://asciinema.org/docs/installati
 
 Then
 
-    rcup -x README.md -x LICENSE -x uw
+    rcup -x README.md -x LICENSE -x uw -x scripts
 
 
 ## Per-host Configuration

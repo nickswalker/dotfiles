@@ -1,0 +1,80 @@
+Host github.com
+    HostName github.com
+    User git
+
+Host server
+    HostName ssh.nickwalker.us
+    User nick
+
+# UT
+
+Host *.csres.utexas.edu
+    User nwalker
+
+Host cs
+    HostName linux.cs.utexas.edu
+    User nwalker
+
+Host condor
+    HostName submit64.cs.utexas.edu
+    User nwalker
+
+Host lab
+    HostName nibbler.csres.utexas.edu
+    Port 40
+    User nwalker
+
+Host lab2
+    HostName kif.csres.utexas.edu
+    Port 40
+    User nwalker
+
+Host drperceptron
+    HostName drperceptron.csres.utexas.edu
+    User bwilab
+
+Host nixons-head
+    HostName nixons-head.csres.utexas.edu
+    Port 40
+
+# CSE
+
+Host bicycle
+    HostName bicycle.cs.washington.edu
+
+Host recycle
+    HostName recycle.cs.washington.edu
+
+Host tricycle
+    HostName tricycle.cs.washington.edu
+
+Host bam
+    HostName bam.cs.washington.edu
+
+Host boom
+    HostName boom.cs.washington.edu
+
+
+Host bam bicycle boom recycle roomba tricycle
+     User nswalker
+
+# HCRL
+
+Host astro astro-ex
+    HostName astro.cs.washington.edu
+    User fetch
+
+Host panang panang-ex
+    HostName panang.hcrlab.cs.washington.edu
+    User mayfield
+
+Host roomba roomba-ex
+    HostName roomba.cs.washington.edu
+    User nswalker
+
+Host snoopy snoopy-ex
+    HostName snoopy.hcrlab.cs.washington.edu
+    User mayfield
+
+Host astro-ex panang-ex roomba-ex 
+    ProxyJump boom
