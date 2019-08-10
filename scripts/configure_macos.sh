@@ -3,8 +3,8 @@
 # Start with some installs
 
 brew tap thoughtbot/formulae
-brew install asciinema direnv gnupg hub rcm tmux tree rbenv ripgrep pinentry-mac npm wget youtube-dl
-brew cask install adobe-creative-cloud anki betterzip caffeine dropbox imageoptim iterm2 jetbrains-toolbox mendeley qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack spotify tunnelblick
+brew install asciinema direnv gnupg hub rcm sshfs tmux tree rbenv ripgrep pinentry-mac npm wget youtube-dl
+brew cask install adobe-creative-cloud anki betterzip caffeine caprine dropbox imageoptim iterm2 jetbrains-toolbox mendeley osxfuse qlimagesize qlcolorcode qlmarkdown qlstephen rescuetime slack spotify transmission tunnelblick
 
 # Get command line tools
 xcode-select --install
@@ -203,7 +203,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 
 # Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
 
 # Keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
@@ -297,8 +297,8 @@ defaults write com.apple.dock tilesize -int 36
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
 
-# Minimize windows into their application’s icon
-defaults write com.apple.dock minimize-to-application -bool true
+# Minimize windows into their application’s icon (if true)
+defaults write com.apple.dock minimize-to-application -bool false
 
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
