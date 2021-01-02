@@ -6,36 +6,17 @@ Host server
     HostName ssh.nickwalker.us
     User nick
 
+Host nas synology
+    HostName synology.nickwalker.us
+    User nickswalker
+    Port 12222
+
 # UT
-
-Host *.csres.utexas.edu
-    User nwalker
-
-Host cs
-    HostName linux.cs.utexas.edu
-    User nwalker
-
-Host condor
-    HostName submit64.cs.utexas.edu
-    User nwalker
-
-Host lab
-    HostName nibbler.csres.utexas.edu
-    Port 40
-    User nwalker
-
-Host lab2
-    HostName kif.csres.utexas.edu
-    Port 40
-    User nwalker
-
-Host drperceptron
-    HostName drperceptron.csres.utexas.edu
-    User bwilab
 
 Host nixons-head
     HostName nixons-head.csres.utexas.edu
     Port 40
+    User bwilab
 
 # CSE
 

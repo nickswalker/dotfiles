@@ -46,7 +46,8 @@ if [[ -d "$HOME/miniconda3" ]]; then
 #    export PATH=$HOME/miniconda3/bin:$PATH
 fi
 
-eval "$(direnv hook zsh)"
+# Not many projects with custom env vars these days. Consider again when working with robots directly
+# eval "$(direnv hook zsh)"
 
 if ! type "dircolors" > /dev/null; then
   export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
@@ -68,3 +69,8 @@ alias ownfiles="sudo chmod 100644 **/*(.)"
 alias getbwihosts="curl http://nixons-head.csres.utexas.edu:7979/hosts"
 
 source ~/.dotfiles/scripts/tmux_helpers.sh
+
+autoload -U zmv
+
+alias zcp='zmv -C'
+alias zln='zmv -L'
