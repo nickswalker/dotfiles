@@ -45,6 +45,10 @@ Host astro astro-ex
     HostName astro.cs.washington.edu
     User fetch
 
+Host kuriosity kuriosity-ex
+    HostName kuriosity.personalrobotics.cs.washington.edu
+    User mayfield
+
 Host panang panang-ex
     HostName panang.hcrlab.cs.washington.edu
     User mayfield
@@ -57,5 +61,5 @@ Host snoopy snoopy-ex
     HostName snoopy.hcrlab.cs.washington.edu
     User mayfield
 
-Host astro-ex panang-ex roomba-ex 
+Host astro-ex kuriosity-ex panang-ex roomba-ex snoopy-ex
     ProxyJump boom
