@@ -36,14 +36,28 @@ Host boom
     HostName boom.cs.washington.edu
 
 
-Host bam bicycle boom recycle roomba tricycle
+Host bam bicycle boom recycle roomba tricycle gitlab04 gitlab04-ex gitlab05 gitlab05-ex
      User nswalker
+
+Host gitlab04 gitlab04-ex
+    HostName gitlab04.cs.washington.edu
+
+Host gitlab05 gitlab05-ex
+    HostName gitlab05.cs.washington.edu
+
+Host gitlab04-ex gitlab05-ex
+    ProxyJump boom
+ 
 
 # HCRL
 
 Host astro astro-ex
     HostName astro.cs.washington.edu
     User fetch
+
+Host forky forky-ex
+    HostName forky.hcrlab.cs.washington.edu
+    User hello-robot
 
 Host kuriosity kuriosity-ex
     HostName kuriosity.personalrobotics.cs.washington.edu
@@ -61,5 +75,5 @@ Host snoopy snoopy-ex
     HostName snoopy.hcrlab.cs.washington.edu
     User mayfield
 
-Host astro-ex kuriosity-ex panang-ex roomba-ex snoopy-ex
+Host astro-ex forky-ex kuriosity-ex panang-ex roomba-ex snoopy-ex
     ProxyJump boom
