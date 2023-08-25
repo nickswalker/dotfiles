@@ -35,19 +35,17 @@ Host bam
 Host boom
     HostName boom.cs.washington.edu
 
+Host nisqually nisqually-ex
+    Hostname nisqually.cs.washington.edu
 
-Host bam bicycle boom recycle roomba tricycle gitlab04 gitlab04-ex gitlab05 gitlab05-ex
-     User nswalker
+Host puyallup puyallup-ex
+    Hostname puyallup.cs.washington.edu
 
-Host gitlab04 gitlab04-ex
-    HostName gitlab04.cs.washington.edu
+Host bam bicycle boom recycle roomba tricycle
+    User nswalker
 
-Host gitlab05 gitlab05-ex
-    HostName gitlab05.cs.washington.edu
-
-Host gitlab04-ex gitlab05-ex
-    ProxyJump boom
- 
+Host puyallup puyallup-ex nisqually nisqually-ex
+    User aurmr
 
 # HCRL
 
@@ -55,8 +53,28 @@ Host astro astro-ex
     HostName astro.cs.washington.edu
     User fetch
 
+Host aurmr-perception aurmr aurmr-perception-ex aurmr-ex
+    HostName aurmr.cs.washington.edu
+    User aurmr
+
+Host aurmr-control aurmr2 aurmr-control-ex aurmr2-ex
+    HostName aurmr2.cs.washington.edu
+    User aurmr
+
 Host forky forky-ex
     HostName forky.hcrlab.cs.washington.edu
+    User hello-robot
+
+Host forky-wired forky-wired-ex
+    HostName forky-1.hcrlab.cs.washington.edu
+    User hello-robot
+
+Host slinky slinky-ex
+    HostName slinky.hcrlab.cs.washington.edu
+    User hello-robot
+
+Host slinky-wired slinky-wired-ex
+    HostName slinky-1.hcrlab.cs.washington.edu
     User hello-robot
 
 Host kuriosity kuriosity-ex
@@ -75,5 +93,5 @@ Host snoopy snoopy-ex
     HostName snoopy.hcrlab.cs.washington.edu
     User mayfield
 
-Host astro-ex forky-ex kuriosity-ex panang-ex roomba-ex snoopy-ex
+Host astro-ex aurmr-ex aurmr2-ex aurmr-control-ex aurmr-perception-ex forky-ex forky-wired-ex kuriosity-ex panang-ex roomba-ex slinky-ex slinky-wired-ex snoopy-ex nisqually-ex puyallup-ex
     ProxyJump boom
