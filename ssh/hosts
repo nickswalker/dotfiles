@@ -53,12 +53,12 @@ Host astro astro-ex
     HostName astro.cs.washington.edu
     User fetch
 
-Host aurmr-perception aurmr aurmr-perception-ex aurmr-ex
-    HostName aurmr.cs.washington.edu
+Host aurmr-perception inter aurmr-perception-ex inter-ex
+    HostName inter.cs.washington.edu
     User aurmr
 
-Host aurmr-control aurmr2 aurmr-control-ex aurmr2-ex
-    HostName aurmr2.cs.washington.edu
+Host aurmr-control winthrop aurmr-control-ex winthrop-ex
+    HostName winthrop.cs.washington.edu
     User aurmr
 
 Host forky forky-ex
@@ -93,5 +93,5 @@ Host snoopy snoopy-ex
     HostName snoopy.hcrlab.cs.washington.edu
     User mayfield
 
-Host astro-ex aurmr-ex aurmr2-ex aurmr-control-ex aurmr-perception-ex forky-ex forky-wired-ex kuriosity-ex panang-ex roomba-ex slinky-ex slinky-wired-ex snoopy-ex nisqually-ex puyallup-ex
+Host astro-ex aurmr-control-ex aurmr-perception-ex inter-ex forky-ex forky-wired-ex kuriosity-ex panang-ex roomba-ex slinky-ex slinky-wired-ex snoopy-ex nisqually-ex puyallup-ex winthrop-ex
     ProxyJump boom
