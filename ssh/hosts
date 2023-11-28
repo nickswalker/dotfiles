@@ -61,6 +61,10 @@ Host aurmr-control winthrop aurmr-control-ex winthrop-ex
     HostName winthrop.cs.washington.edu
     User aurmr
 
+Host aurmr-realtime emmons aurmr-realtime-ex emmons-ex
+    HostName emmons.cs.washington.edu
+    User aurmr
+
 Host forky forky-ex
     HostName forky.hcrlab.cs.washington.edu
     User hello-robot
@@ -93,5 +97,5 @@ Host snoopy snoopy-ex
     HostName snoopy.hcrlab.cs.washington.edu
     User mayfield
 
-Host astro-ex aurmr-control-ex aurmr-perception-ex inter-ex forky-ex forky-wired-ex kuriosity-ex panang-ex roomba-ex slinky-ex slinky-wired-ex snoopy-ex nisqually-ex puyallup-ex winthrop-ex
+Host astro-ex aurmr-control-ex aurmr-perception-ex aurmr-realtime-ex emmons-ex forky-ex forky-wired-ex inter-ex kuriosity-ex panang-ex roomba-ex slinky-ex slinky-wired-ex snoopy-ex nisqually-ex puyallup-ex winthrop-ex
     ProxyJump boom
