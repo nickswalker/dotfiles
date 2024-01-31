@@ -1,4 +1,7 @@
+# Helper paths for tucking away files
 private
+_#_*/
+_#_*
 
 # Git credential file
 .gitconfig.local
